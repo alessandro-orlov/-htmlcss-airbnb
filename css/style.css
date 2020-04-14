@@ -79,6 +79,7 @@
   color: #fff;
   text-shadow: 2px 2px 1px #222;
   transition: all 0.2s;
+  z-index: 5;
 }
 
 .city:hover h2 {
