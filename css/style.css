@@ -14,7 +14,6 @@
 
 .main-page {
   width: 50%;
-  height: 50vh;
   margin: auto;
 }
 
@@ -25,6 +24,7 @@
   height: 40vw;
   cursor: pointer;
   margin: 20px auto;
+  box-shadow: 3px 3px 2px #222;
   overflow: hidden; /* image zoom doesn't affect container */
 }
 
@@ -32,19 +32,19 @@
   position: relative;
   width: 100%;
   height: 100%;
-  box-shadow: 3px 3px 2px #222;
   background-size: cover;
   background-position: center;
   transition: all 0.4s ease; /* smooth transition */
 }
 
+ .city:hover {
+  transform: scale(1.1); /* actual 10% zoom */
+  color: red;
+}
+
 /* Background Image */
 .roma {
   background-image: url('../img/roma.jpg');
-}
-
-.city:hover  {
-  transform: scale(1.1); /* actual 10% zoom */
 }
 
 .milano {
