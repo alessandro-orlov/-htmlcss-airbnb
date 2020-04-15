@@ -20,6 +20,7 @@
 
 /* Begin Contente BCLOCK*/
 .content {
+  position: relative;
   width: 100%;
   height: 40vw;
   cursor: pointer;
@@ -29,7 +30,6 @@
 }
 
 .city {
-  position: relative;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -63,14 +63,14 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, .4);
-    transition: all 0.4s ease; /* smooth transition */
+  transition: all 0.4s ease; /* smooth transition */
 }
 
 .city:hover > .overlay {
   background-color: rgba(0, 0, 0, .0); /* overlay gone on hover */
 }
 
-.city h2 {
+.content h2 {
   font-size: 3rem;
   position: absolute;
   top: 50%;
@@ -80,9 +80,5 @@
   text-shadow: 2px 2px 1px #222;
   transition: all 0.2s;
   z-index: 5;
-}
-
-.city:hover h2 {
- font-size: 3.1rem;
 }
 /* END Content BLOCK */
